@@ -108,7 +108,7 @@ let funcionario: {
     supervisores: ["Ana", "Fernando"],
     baterPonto(horario: number): string {
         if (horario <= 8) {
-            return  "Ponto Normal"
+            return "Ponto Normal"
         } else {
             return "Fora do horario"
         }
@@ -132,3 +132,95 @@ let funcionario2 : Funcionario = {
 console.log(funcionario2.supervisores)
 console.log(funcionario2.baterPonto(8))
 console.log(funcionario2.baterPonto(9))
+
+
+//Union Types
+// let nota: any = 10
+ let nota: number | string = 10
+console.log(`Minha nota é ${nota}!`)
+nota = '10'
+console.log(`Minha nota é ${nota}!`)
+// nota = true
+// console.log(`Minha nota é ${nota}!`)
+
+
+//checando tipos
+let valor = 30
+if (typeof  valor == "number") {
+    console.log("é um number")
+} else {
+    console.log(typeof  valor)
+}
+
+//never
+function falha( msg: string) : never {
+    throw new Error(msg)
+}
+const produto = {
+    nome: "Sabao",
+    preco: 8,
+    validarProduto() {
+        if (!this.nome || this.nome.trim().length == 0) {
+            falha("Precisa ter um nome")
+        }
+        if (this.preco <= 0) {
+            falha("Preco invalido!")
+        }
+    }
+}
+produto.validarProduto()
+
+//ou munda no tsconfig.js o campo strictNullChecks para false ou declara q permite tipo null
+let alturaOpcional: null | number = 12
+alturaOpcional = null
+
+type Contato = {
+    nome: string,
+    tel1: string,
+    tel2: string | null
+}
+
+const contato1: Contato = {
+    nome: "Fulano",
+    tel1: "99991122",
+    tel2: null
+}
+console.log(contato1.nome)
+console.log(contato1.tel1)
+console.log(contato1.tel2)
+
+// let podeSerNulo: null = null
+let podeSerNulo = null
+console.log(podeSerNulo)
+podeSerNulo = 12
+console.log(podeSerNulo)
+podeSerNulo = 'abc'
+console.log(podeSerNulo)
+
+
+//Desafio
+type ContaBancaria  = {
+    saldo: 3456,
+    depositar(valor: number): void
+}
+
+let contaBancaria: ContaBancaria = {
+    saldo: 3456,
+    depositar(valor: number) {
+        this.saldo += valor
+    }
+}
+
+type Correntista  = {
+    nome: string,
+    contaBancaria: ContaBancaria,
+    contatos: string[]
+}
+let correntista: Correntista = {
+    nome: "Nanda Barreto",
+    contaBancaria: contaBancaria,
+    contatos: ["99887545", "98765454"]
+}
+correntista.contaBancaria.depositar(3000)
+console.log(correntista)
+

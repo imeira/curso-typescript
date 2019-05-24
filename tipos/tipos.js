@@ -101,3 +101,68 @@ var funcionario2 = {
 console.log(funcionario2.supervisores);
 console.log(funcionario2.baterPonto(8));
 console.log(funcionario2.baterPonto(9));
+//Union Types
+// let nota: any = 10
+var nota = 10;
+console.log("Minha nota \u00E9 " + nota + "!");
+nota = '10';
+console.log("Minha nota \u00E9 " + nota + "!");
+// nota = true
+// console.log(`Minha nota é ${nota}!`)
+//checando tipos
+var valor = 30;
+if (typeof valor == "number") {
+    console.log("é um number");
+}
+else {
+    console.log(typeof valor);
+}
+//never
+function falha(msg) {
+    throw new Error(msg);
+}
+var produto = {
+    nome: "Sabao",
+    preco: 8,
+    validarProduto: function () {
+        if (!this.nome || this.nome.trim().length == 0) {
+            falha("Precisa ter um nome");
+        }
+        if (this.preco <= 0) {
+            falha("Preco invalido!");
+        }
+    }
+};
+produto.validarProduto();
+//ou munda no tsconfig.js o campo strictNullChecks para false ou declara q permite tipo null
+var alturaOpcional = 12;
+alturaOpcional = null;
+var contato1 = {
+    nome: "Fulano",
+    tel1: "99991122",
+    tel2: null
+};
+console.log(contato1.nome);
+console.log(contato1.tel1);
+console.log(contato1.tel2);
+// let podeSerNulo: null = null
+var podeSerNulo = null;
+console.log(podeSerNulo);
+podeSerNulo = 12;
+console.log(podeSerNulo);
+podeSerNulo = 'abc';
+console.log(podeSerNulo);
+var contaBancaria = {
+    saldo: 3456,
+    depositar: function (valor) {
+        this.saldo += valor;
+    }
+};
+var correntista = {
+    nome: "Nanda Barreto",
+    contaBancaria: contaBancaria,
+    contatos: ["99887545", "98765454"]
+};
+correntista.contaBancaria.depositar(3000);
+console.log(correntista);
+//# sourceMappingURL=tipos.js.map
