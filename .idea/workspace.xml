@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c89366a-0d84-4527-b471-7ae86d69f108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/compilador/compilador.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ecmascript/ecmascript.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compilador/compilador.js" beforeDir="false" afterPath="$PROJECT_DIR$/compilador/compilador.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compilador/compilador.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/compilador/compilador.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/introducao/basico.js" beforeDir="false" afterPath="$PROJECT_DIR$/introducao/basico.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/introducao/basico.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/introducao/basico.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tipos/tipos.js" beforeDir="false" afterPath="$PROJECT_DIR$/tipos/tipos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tipos/tipos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tipos/tipos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tipos/tipos.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/tipos/tipos.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,28 +27,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tipos/tipos.ts">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compilador/compilador.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="204">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+        <entry file="file://$PROJECT_DIR$/ecmascript/ecmascript.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="308">
+              <caret line="206" column="39" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -78,10 +71,11 @@
         <option value="$PROJECT_DIR$/introducao/basico.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/tipos/tipos.ts" />
         <option value="$PROJECT_DIR$/compilador/compilador.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/ecmascript/ecmascript.ts" />
       </list>
     </option>
   </component>
@@ -107,12 +101,24 @@
             <path>
               <item name="curso-typescript" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-typescript" type="462c0819:PsiDirectoryNode" />
-              <item name="compilador" type="462c0819:PsiDirectoryNode" />
+              <item name="ecmascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curso-typescript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-typescript" type="462c0819:PsiDirectoryNode" />
+              <item name="ecmascript" type="462c0819:PsiDirectoryNode" />
+              <item name="ecmascript.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="curso-typescript" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-typescript" type="462c0819:PsiDirectoryNode" />
               <item name="introducao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curso-typescript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-typescript" type="462c0819:PsiDirectoryNode" />
+              <item name="introducao" type="462c0819:PsiDirectoryNode" />
+              <item name="basico.ts" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="curso-typescript" type="b2602c69:ProjectViewProjectNode" />
@@ -171,12 +177,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558663095209</updated>
-      <workItem from="1558663098734" duration="13541000" />
+      <workItem from="1558663098734" duration="22746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13541000" />
+    <option name="totallyTimeSpent" value="22746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -228,6 +234,8 @@
         <option value="$PROJECT_DIR$/tipos/tipos.js.map" />
         <option value="$PROJECT_DIR$/introducao/basico.js.map" />
         <option value="$PROJECT_DIR$/compilador/compilador.js.map" />
+        <option value="$PROJECT_DIR$/ecmascript/ecmascript.js.map" />
+        <option value="$PROJECT_DIR$/ecmascript/ecmascript.js" />
       </list>
     </option>
   </component>
@@ -263,13 +271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compilador/compilador.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -285,13 +286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tipos/tipos.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compilador/compilador.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -299,10 +293,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tipos/tipos.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecmascript/ecmascript.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="206" column="39" selection-start-line="206" selection-start-column="39" selection-end-line="206" selection-end-column="39" />
         </state>
       </provider>
     </entry>

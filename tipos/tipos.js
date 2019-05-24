@@ -1,31 +1,32 @@
 "use strict";
 //String
-var nome = 'Igor';
+let nome = 'Igor';
 console.log(nome);
 //numbers
-var idade = 27.5;
+let idade = 27.5;
 console.log(idade);
 //booelan
-var possiuHobbies = false;
+let possiuHobbies = false;
 console.log(possiuHobbies);
 //tipos explicitos
-var minhaIdade = 27;
+let minhaIdade = 27;
 console.log(typeof minhaIdade);
 //minhaIdade = '27 anos'
 //console.log(typeof minhaIdade)
 //array
-var hobbies = ["futebol", "praia"];
+let hobbies = ["futebol", "praia"];
 console.log(hobbies[0]);
 console.log(typeof hobbies);
 hobbies = [100];
 console.log(hobbies);
 //tuplas
-var endereco = ["Av Principal", 99];
+let endereco = ["Av Principal", 99];
 console.log(endereco);
 endereco = ["Av Principal", 99];
 console.log(endereco);
 // enums
 var Cor;
+// enums
 (function (Cor) {
     Cor[Cor["Cinza"] = 0] = "Cinza";
     Cor[Cor["Verde"] = 100] = "Verde";
@@ -34,11 +35,11 @@ var Cor;
     Cor[Cor["Amarelo"] = 12] = "Amarelo";
     Cor[Cor["Vermelho"] = 100] = "Vermelho";
 })(Cor || (Cor = {}));
-var minhaCor = Cor.Verde;
+let minhaCor = Cor.Verde;
 console.log(minhaCor);
 console.log(Cor.Azul, Cor.Laranja, Cor.Amarelo, Cor.Vermelho);
 //any
-var carro = "BMW";
+let carro = "BMW";
 console.log(carro);
 carro = { marca: "BMW", ano: 2019 };
 console.log(carro);
@@ -56,26 +57,26 @@ function multiplicar(numA, numB) {
 }
 console.log(multiplicar(2.3, 9));
 //tipo funcao
-var calculo;
+let calculo;
 // calculo( = digaOi());
 // calculo()
 calculo = multiplicar;
 console.log(calculo(5, 6));
 //objetos
-var usuario = {
+let usuario = {
     nome: "Igor",
     idade: 27
 };
 console.log(usuario);
 //tipo especifico
-var usuario2 = {
+let usuario2 = {
     nome: "Igor",
     idade: 27
 };
 console.log(usuario2);
-var funcionario = {
+let funcionario = {
     supervisores: ["Ana", "Fernando"],
-    baterPonto: function (horario) {
+    baterPonto(horario) {
         if (horario <= 8) {
             return "Ponto Normal";
         }
@@ -87,9 +88,9 @@ var funcionario = {
 console.log(funcionario.supervisores);
 console.log(funcionario.baterPonto(8));
 console.log(funcionario.baterPonto(9));
-var funcionario2 = {
+let funcionario2 = {
     supervisores: ["Monica", "Fernanda"],
-    baterPonto: function (horario) {
+    baterPonto(horario) {
         if (horario <= 8) {
             return "Ponto Normal";
         }
@@ -103,14 +104,14 @@ console.log(funcionario2.baterPonto(8));
 console.log(funcionario2.baterPonto(9));
 //Union Types
 // let nota: any = 10
-var nota = 10;
-console.log("Minha nota \u00E9 " + nota + "!");
+let nota = 10;
+console.log(`Minha nota é ${nota}!`);
 nota = '10';
-console.log("Minha nota \u00E9 " + nota + "!");
+console.log(`Minha nota é ${nota}!`);
 // nota = true
 // console.log(`Minha nota é ${nota}!`)
 //checando tipos
-var valor = 30;
+let valor = 30;
 if (typeof valor == "number") {
     console.log("é um number");
 }
@@ -121,10 +122,10 @@ else {
 function falha(msg) {
     throw new Error(msg);
 }
-var produto = {
+const produto = {
     nome: "Sabao",
     preco: 8,
-    validarProduto: function () {
+    validarProduto() {
         if (!this.nome || this.nome.trim().length == 0) {
             falha("Precisa ter um nome");
         }
@@ -135,9 +136,9 @@ var produto = {
 };
 produto.validarProduto();
 //ou munda no tsconfig.js o campo strictNullChecks para false ou declara q permite tipo null
-var alturaOpcional = 12;
+let alturaOpcional = 12;
 alturaOpcional = null;
-var contato1 = {
+const contato1 = {
     nome: "Fulano",
     tel1: "99991122",
     tel2: null
@@ -146,19 +147,19 @@ console.log(contato1.nome);
 console.log(contato1.tel1);
 console.log(contato1.tel2);
 // let podeSerNulo: null = null
-var podeSerNulo = null;
+let podeSerNulo = null;
 console.log(podeSerNulo);
 podeSerNulo = 12;
 console.log(podeSerNulo);
 podeSerNulo = 'abc';
 console.log(podeSerNulo);
-var contaBancaria = {
+let contaBancaria = {
     saldo: 3456,
-    depositar: function (valor) {
+    depositar(valor) {
         this.saldo += valor;
     }
 };
-var correntista = {
+let correntista = {
     nome: "Nanda Barreto",
     contaBancaria: contaBancaria,
     contatos: ["99887545", "98765454"]
